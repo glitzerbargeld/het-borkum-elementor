@@ -1,3 +1,33 @@
+/*Bottom and Top Bar Scroll Control*/
+
+window.onscroll = function() {
+    showBookingButton();
+}
+
+function showBookingButton() {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+
+        document.getElementById("bottom-bar").classList.add("goup");
+		document.getElementById("site-header").classList.add("scrollNav")
+    } else {
+        document.getElementById("bottom-bar").classList.remove("goup");
+		document.getElementById("site-header").classList.remove("scrollNav")
+    }
+}
+
+jQuery(function() {
+  jQuery('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+
+
+
+/**Buchungsformular */
+
+
 jQuery(document).ready(function($){
 	// Datepicker range
 	$(".spiffy-date-field").datepicker({
