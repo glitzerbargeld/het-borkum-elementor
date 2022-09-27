@@ -29,3 +29,18 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
  font-style: inherit;
  margin-top: 10%;
 }
+
+header {
+	width: 100vw;
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(255, 255, 255 , 0.7);
+	
+}
+
+.scrollnav {
+		transition: 0.5s;
+		padding: 0 !important;
+}
