@@ -8,9 +8,18 @@ function showBookingButton() {
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
 
         document.getElementById("bottom-bar").classList.add("goup");
-		document.getElementById("site-header").classList.add("scrollNav")
+		
     } else {
         document.getElementById("bottom-bar").classList.remove("goup");
+		
+    }
+
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+
+        
+		document.getElementById("site-header").classList.add("scrollNav")
+    } else {
+
 		document.getElementById("site-header").classList.remove("scrollNav")
     }
 }
