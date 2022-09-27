@@ -16,6 +16,16 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     Add your custom styles here
 */
 
-.test {
-    background: white;
+.goup {
+	transform: translateY(0) !important;
+	transition: 0.5s;
+}
+
+.pum-theme-221 .pum-content,
+.pum-theme-standard-theme .pum-content {
+ color: #8c8c8c;
+ font-family: inherit;
+ font-weight: 400;
+ font-style: inherit;
+ margin-top: 10%;
 }
